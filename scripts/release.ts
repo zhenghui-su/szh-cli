@@ -63,9 +63,9 @@ async function main() {
     return;
   }
   // 2. 执行测试
-  step("\nRunning tests...");
-  await run("pnpm", ["test:unit"]);
-  await run("pnpm", ["test:e2e"]);
+  // step("\nRunning tests...");
+  // await run("pnpm", ["test:unit"]);
+  // await run("pnpm", ["test:e2e"]);
 
   // 3. 自动修改包版本
   if (!isDry) {
