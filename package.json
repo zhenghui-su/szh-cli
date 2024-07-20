@@ -75,6 +75,10 @@
     "type": "git",
     "url": "https://github.com/zhenghui-su/szh-cli.git"
   },
+  "homepage": "https://github.com/zhenghui-su/szh-cli#README",
+  "bugs": {
+    "url": "https://github.com/zhenghui-su/szh-cli/issues"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   }
