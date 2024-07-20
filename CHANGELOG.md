@@ -1,3 +1,12 @@
+## <small>0.0.2 (2024-07-20)</small>
+
+* feat: add custom loading ([73229a1](https://github.com/zhenghui-su/szh-cli/commit/73229a1))
+* feat: add szh ssh command ([17815e3](https://github.com/zhenghui-su/szh-cli/commit/17815e3))
+* perf: ssh2 declare module ([f5f5a45](https://github.com/zhenghui-su/szh-cli/commit/f5f5a45))
+* chore: add ssh2 dependencies ([4fdf717](https://github.com/zhenghui-su/szh-cli/commit/4fdf717))
+
+
+
 ## <small>0.0.1 (2024-07-19)</small>
 
 * fix: 发包脚本修改 ([fbfb077](https://github.com/zhenghui-su/szh-cli/commit/fbfb077))
