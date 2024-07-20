@@ -3,7 +3,8 @@ export type ValuesToUnion<T> = {
 }[keyof T];
 
 export type LoadingOtherParams = {
-  projectName: string;
+  operationType: "createProject" | "connectServer";
+  projectName?: string;
 };
 
 export type ProjectType =

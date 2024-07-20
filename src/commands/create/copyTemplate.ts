@@ -38,7 +38,7 @@ async function copyTemplateFiles(projectName: string, targetDirectory: string) {
           await fs.copy(srcFilePath, destFilePath);
         }
       },
-      { projectName }
+      { projectName, operationType: "createProject" }
     );
   } catch (err) {
     console.error(`Error copying files: ${err}`);
