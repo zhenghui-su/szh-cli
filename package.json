@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "nodemon",
     "build": "rimraf lib && tsc --outDir lib --module CommonJS",
-    "lint": "eslint . --ext '.js,.ts' --fix",
+    "lint": "eslint --ext .ts,.tsx,.js,.jsx ./",
+    "lint:fix": "eslint --fix --ext .ts,.tsx,.js,.jsx --quiet ./",
     "release": "tsx ./scripts/release.ts",
     "prepare": "husky install",
     "commit": "git-cz",

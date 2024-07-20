@@ -5,3 +5,6 @@ build/*
 lib/*
 es/*
 bin/*
+templates/*
+*.d.ts
+scripts
