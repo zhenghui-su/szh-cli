@@ -1,3 +1,4 @@
 import create from "./create";
+import ssh from "./ssh";
 
-export { create };
+export { create, ssh };
