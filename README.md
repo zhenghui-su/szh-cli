@@ -41,3 +41,9 @@ szh <command> --help
 ```
 
 例如：`szh create --help`
+
+ssh 远程连接服务器
+
+```bash
+szh ssh <host>
+```
