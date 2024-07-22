@@ -1,3 +1,14 @@
+## <small>0.0.3 (2024-07-22)</small>
+
+* fix: 修复未修改package字段bug ([5324949](https://github.com/zhenghui-su/szh-cli/commit/5324949))
+* feat: 新增koa简单模板 ([fa7b670](https://github.com/zhenghui-su/szh-cli/commit/fa7b670))
+* feat: 增加颜色和koa选项 ([82bbdb1](https://github.com/zhenghui-su/szh-cli/commit/82bbdb1))
+* perf: lint update ([016db7b](https://github.com/zhenghui-su/szh-cli/commit/016db7b))
+* docs: add docs ([dfbc086](https://github.com/zhenghui-su/szh-cli/commit/dfbc086))
+* docs: update ([e33962d](https://github.com/zhenghui-su/szh-cli/commit/e33962d))
+
+
+
 ## <small>0.0.2 (2024-07-20)</small>
 
 * feat: add custom loading ([73229a1](https://github.com/zhenghui-su/szh-cli/commit/73229a1))
