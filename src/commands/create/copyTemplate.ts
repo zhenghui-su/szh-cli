@@ -15,8 +15,11 @@ async function copyTemplateFiles(projectName: string, targetDirectory: string) {
     const templateSrcDir = path.join(dir, "templates");
 
     const projectType = await askCreateType();
-    // 如果需要 TypeScript，则选择 TypeScript 模板
-    const needTypeScript = await askNeedTypeScript();
+    let needTypeScript;
+    if (projectType !== "koa") {
+      // 如果需要 TypeScript，则选择 TypeScript 模板
+      needTypeScript = await askNeedTypeScript();
+    }
 
     const specificTemplateDir = path.join(
       templateSrcDir,
@@ -36,6 +39,13 @@ async function copyTemplateFiles(projectName: string, targetDirectory: string) {
 
           // 复制文件或目录
           await fs.copy(srcFilePath, destFilePath);
+        }
+        // 修改 package.json 文件中的 name 字段
+        const packageJsonPath = path.join(targetDirectory, "package.json");
+        if (await fs.pathExists(packageJsonPath)) {
+          const packageJson = await fs.readJson(packageJsonPath);
+          packageJson.name = projectName;
+          await fs.writeJson(packageJsonPath, packageJson, { spaces: 2 });
         }
       },
       { projectName, operationType: "createProject" }
