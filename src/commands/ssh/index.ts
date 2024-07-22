@@ -4,8 +4,8 @@ import ssh from "./ssh";
 
 export default () => {
   program
-    .command("ssh <host>")
+    .command("ssh [host]")
     .description(chalk.cyan("链接到远程服务器"))
-    .option("-f, --force", chalk.red("实验性功能, 谨慎使用"))
+    .option("-h, --help", chalk.red("实验性功能, 谨慎使用"))
     .action(ssh);
 };

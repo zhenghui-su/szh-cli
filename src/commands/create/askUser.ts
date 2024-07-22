@@ -2,6 +2,24 @@ import prompt from "../../utils/prompt";
 import chalk from "chalk";
 import { ProjectType } from "../../types";
 
+/**
+ * 询问项目名称
+ */
+export const askProjectName = async () => {
+  const { projectName } = await prompt([
+    {
+      type: "input",
+      name: "projectName",
+      message: chalk.reset("请输入项目名称:"),
+      default: () => chalk.reset("my-project"),
+      transformer: (input: string) => {
+        return chalk.reset(input);
+      },
+    },
+  ]);
+  return projectName;
+};
+
 /** 询问是否覆盖 */
 export const askOverwrite = async () => {
   const { isOverwrite } = await prompt([
@@ -40,7 +58,7 @@ export const askCreateType = async (): Promise<ProjectType> => {
     {
       type: "list",
       name: "projectType",
-      message: "请选择你要创建的项目类型",
+      message: chalk.reset("请选择你要创建的项目类型"),
       default: "react",
       choices: ProjectChoices,
     },
@@ -57,7 +75,7 @@ export const askNeedTypeScript = async () => {
     {
       type: "list",
       name: "needTypeScript",
-      message: "是否需要 TypeScript ?",
+      message: chalk.reset("是否需要 TypeScript ?"),
       choices: [
         { name: "需要", value: true },
         { name: "不需要", value: false },

@@ -2,6 +2,7 @@ import path from "path";
 import fs from "fs-extra";
 import dirExistCall from "./dirExistCall";
 import copyTemplateFiles from "./copyTemplate";
+import { askProjectName } from "./askUser";
 
 /**
  * 创建新项目
@@ -9,6 +10,9 @@ import copyTemplateFiles from "./copyTemplate";
  * @param options - 命令参数
  */
 export default async (projectName: string, options: any) => {
+  if (!projectName) {
+    projectName = await askProjectName();
+  }
   // 获取当前工作目录
   const cwd = process.cwd();
   // 拼接得到项目目录

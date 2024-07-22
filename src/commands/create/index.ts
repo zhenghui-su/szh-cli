@@ -4,7 +4,7 @@ import create from "./create";
 
 export default () => {
   program
-    .command("create <project-name>") // 这里不能使用 chalk
+    .command("create [project-name]") // 这里不能使用 chalk
     .description(chalk.cyan("创建新项目"))
     .option(
       "-f, --force",
