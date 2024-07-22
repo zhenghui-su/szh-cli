@@ -8,12 +8,12 @@ export type LoadingOtherParams = {
 };
 
 export type ProjectType =
-  | "library"
   | "vue"
   | "react"
   | "uniapp"
   | "koa"
-  | "nest";
+  | "nest"
+  | "library";
 
 export type PromptType =
   | "input"

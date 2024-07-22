@@ -1,4 +1,6 @@
 import prompt from "../../utils/prompt";
+import chalk from "chalk";
+import { ProjectType } from "../../types";
 
 /** 询问是否覆盖 */
 export const askOverwrite = async () => {
@@ -19,8 +21,19 @@ export const askOverwrite = async () => {
   return isOverwrite;
 };
 
+type ProjectChoicesType = {
+  name: string;
+  value: ProjectType;
+};
+
+const ProjectChoices: ProjectChoicesType[] = [
+  { name: chalk.blue("React"), value: "react" },
+  { name: chalk.green("Vue"), value: "vue" },
+  { name: chalk.yellow("Koa"), value: "koa" },
+];
+
 /** 询问要创建的项目类型 */
-export const askCreateType = async () => {
+export const askCreateType = async (): Promise<ProjectType> => {
   const { projectType } = await prompt([
     // 返回值为 Promise
     // 具体配置参见：https://www.npmjs.com/package/inquirer#questions
@@ -28,7 +41,8 @@ export const askCreateType = async () => {
       type: "list",
       name: "projectType",
       message: "请选择你要创建的项目类型",
-      choices: [{ name: "react", value: "react" }],
+      default: "react",
+      choices: ProjectChoices,
     },
   ]);
 
