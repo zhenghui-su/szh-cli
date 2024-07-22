@@ -1,3 +1,12 @@
+## <small>0.0.4 (2024-07-22)</small>
+
+* feat: 将参数变为可选 ([9c661f3](https://github.com/zhenghui-su/szh-cli/commit/9c661f3))
+* feat: 新增询问项目名称 ([560533f](https://github.com/zhenghui-su/szh-cli/commit/560533f))
+* feat: 增加提示信息 ([849dd7e](https://github.com/zhenghui-su/szh-cli/commit/849dd7e))
+* feat: 整合和新增询问问题 ([9801f82](https://github.com/zhenghui-su/szh-cli/commit/9801f82))
+
+
+
 ## <small>0.0.3 (2024-07-22)</small>
 
 * release: v0.0.3 ([6d6cb03](https://github.com/zhenghui-su/szh-cli/commit/6d6cb03))
