@@ -1,3 +1,10 @@
+## <small>0.0.5 (2024-07-23)</small>
+
+* build: 模板prettier配置 ([d03368e](https://github.com/zhenghui-su/szh-cli/commit/d03368e))
+* feat: 模板增加规范化配置 ([38d3c69](https://github.com/zhenghui-su/szh-cli/commit/38d3c69))
+
+
+
 ## <small>0.0.4 (2024-07-22)</small>
 
 * feat: 将参数变为可选 ([9c661f3](https://github.com/zhenghui-su/szh-cli/commit/9c661f3))
