@@ -50,6 +50,10 @@ export const loading = async (
     } else if (other.operationType === "connectServer") {
       spinner.succeed(
         `${chalk.green("已成功连接到服务器!")}
+        \r\n ❗❗❗${chalk.cyan.bold(
+          `连接后无法通过${chalk.gray("Ctrl + C")}关闭连接`
+        )}
+        \r\n  ${chalk.cyan.bold("如需退出请手动关闭终端")}
         \r\n  ${chalk.gray.bold(
           "问题、意见、建议请反馈至: https://github.com/zhenghui-su/szh-cli/issues"
         )}

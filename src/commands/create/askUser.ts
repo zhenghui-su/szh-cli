@@ -45,7 +45,7 @@ type ProjectChoicesType = {
 };
 
 const ProjectChoices: ProjectChoicesType[] = [
-  { name: chalk.blue("React"), value: "react" },
+  { name: chalk.cyan("React"), value: "react" },
   { name: chalk.green("Vue"), value: "vue" },
   { name: chalk.yellow("Koa"), value: "koa" },
 ];
