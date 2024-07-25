@@ -12,7 +12,7 @@ export const askHost = async () => {
       message: "请输入主机地址:",
       validate: (input: string) => {
         if (!input) {
-          return chalk.red("项目名称不能为空，请重新输入:");
+          return chalk.red("主机地址不能为空，请重新输入:");
         }
         return true;
       },
