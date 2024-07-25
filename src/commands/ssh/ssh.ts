@@ -13,9 +13,29 @@ const connectToServer = async (
       .on("ready", () => {
         conn.shell((err: any, stream: any) => {
           if (err) throw err;
-          process.stdin.pipe(stream);
-          stream.pipe(process.stdout);
+
+          process.stdin.setRawMode(true);
+          process.stdin.resume();
+
+          process.stdin.on("data", (data) => {
+            stream.write(data);
+          });
+
+          stream.on("data", (data: any) => {
+            process.stdout.write(data);
+          });
+
+          stream.on("close", () => {
+            process.stdin.setRawMode(false);
+            process.stdin.pause();
+            conn.end();
+          });
+
+          stream.stderr.on("data", (data: any) => {
+            process.stderr.write(data);
+          });
         });
+
         resolve();
       })
       .on("error", (err: any) => {
