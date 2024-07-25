@@ -1,3 +1,10 @@
+## <small>0.0.6 (2024-07-25)</small>
+
+* fix: 修复ssh连接时出现两次用户的问题 ([8aad8f9](https://github.com/zhenghui-su/szh-cli/commit/8aad8f9))
+* docs: 修改文字和颜色 ([4fe72ec](https://github.com/zhenghui-su/szh-cli/commit/4fe72ec))
+
+
+
 ## <small>0.0.5 (2024-07-23)</small>
 
 * build: 模板prettier配置 ([d03368e](https://github.com/zhenghui-su/szh-cli/commit/d03368e))
