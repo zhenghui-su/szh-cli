@@ -1,3 +1,8 @@
+## <small>0.0.7 (2024-08-11)</small>
+
+
+
+
 ## <small>0.0.6 (2024-07-25)</small>
 
 * fix: 修复ssh连接时出现两次用户的问题 ([8aad8f9](https://github.com/zhenghui-su/szh-cli/commit/8aad8f9))
