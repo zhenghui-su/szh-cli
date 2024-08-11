@@ -11,7 +11,7 @@ export const askProjectName = async () => {
       type: "input",
       name: "projectName",
       message: chalk.reset("请输入项目名称:"),
-      default: () => chalk.reset("my-project"),
+      default: "my-project",
       transformer: (input: string) => {
         return chalk.reset(input);
       },
