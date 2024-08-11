@@ -1,3 +1,9 @@
+## <small>0.0.8 (2024-08-11)</small>
+
+* fix: fix default name problem ([4460c0b](https://github.com/zhenghui-su/szh-cli/commit/4460c0b))
+
+
+
 ## <small>0.0.7 (2024-08-11)</small>
 
 
