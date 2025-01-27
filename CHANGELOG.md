@@ -1,3 +1,10 @@
+## <small>0.0.9 (2025-01-27)</small>
+
+* ✨ feat: 新增创建Threejs模板命令 ([6f0b249](https://github.com/zhenghui-su/szh-cli/commit/6f0b249))
+* ✨ feat: 新增three的demo模版 ([da648f1](https://github.com/zhenghui-su/szh-cli/commit/da648f1))
+
+
+
 ## <small>0.0.8 (2024-08-11)</small>
 
 * fix: fix default name problem ([4460c0b](https://github.com/zhenghui-su/szh-cli/commit/4460c0b))
