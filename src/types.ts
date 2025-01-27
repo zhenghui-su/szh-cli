@@ -13,7 +13,8 @@ export type ProjectType =
   | "uniapp"
   | "koa"
   | "nest"
-  | "library";
+  | "library"
+  | "three";
 
 export type PromptType =
   | "input"

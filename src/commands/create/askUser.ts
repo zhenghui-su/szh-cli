@@ -48,6 +48,7 @@ const ProjectChoices: ProjectChoicesType[] = [
   { name: chalk.cyan("React"), value: "react" },
   { name: chalk.green("Vue"), value: "vue" },
   { name: chalk.yellow("Koa"), value: "koa" },
+  { name: chalk.greenBright("Threejs"), value: "three" },
 ];
 
 /** 询问要创建的项目类型 */
