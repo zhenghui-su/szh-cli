@@ -1,0 +1,17 @@
+{
+  "name": "template-three",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "three": "^0.172.0"
+  }
+}
