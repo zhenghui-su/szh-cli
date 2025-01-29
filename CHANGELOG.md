@@ -1,3 +1,9 @@
+## 0.1.0 (2025-01-29)
+
+* feat: 添加three基础模板代码 ([e22bd31](https://github.com/zhenghui-su/szh-cli/commit/e22bd31))
+
+
+
 ## <small>0.0.9 (2025-01-27)</small>
 
 * ✨ feat: 新增创建Threejs模板命令 ([6f0b249](https://github.com/zhenghui-su/szh-cli/commit/6f0b249))
