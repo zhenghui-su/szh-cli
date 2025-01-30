@@ -1,3 +1,9 @@
+## <small>0.1.1 (2025-01-30)</small>
+
+* fix: 类型报错解决 ([adeca21](https://github.com/zhenghui-su/szh-cli/commit/adeca21))
+
+
+
 ## 0.1.0 (2025-01-29)
 
 * feat: 添加three基础模板代码 ([e22bd31](https://github.com/zhenghui-su/szh-cli/commit/e22bd31))
