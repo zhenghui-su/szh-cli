@@ -1,3 +1,9 @@
+## <small>0.1.3 (2025-01-31)</small>
+
+* feat: 调整three基础demo代码 ([58904c0](https://github.com/zhenghui-su/szh-cli/commit/58904c0))
+
+
+
 ## <small>0.1.2 (2025-01-31)</small>
 
 * feat: 新增three模板代码 ([3ba4d24](https://github.com/zhenghui-su/szh-cli/commit/3ba4d24))
