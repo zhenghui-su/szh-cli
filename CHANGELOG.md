@@ -1,3 +1,9 @@
+## <small>0.1.4 (2025-01-31)</small>
+
+* style: 默认样式清除 ([5c9bda7](https://github.com/zhenghui-su/szh-cli/commit/5c9bda7))
+
+
+
 ## <small>0.1.3 (2025-01-31)</small>
 
 * feat: 调整three基础demo代码 ([58904c0](https://github.com/zhenghui-su/szh-cli/commit/58904c0))
