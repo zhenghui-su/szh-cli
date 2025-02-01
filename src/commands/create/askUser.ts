@@ -86,3 +86,19 @@ export const askNeedTypeScript = async () => {
 
   return needTypeScript;
 };
+
+/** 询问是否需要 Threejs Debug UI */
+export const askNeedDebugUI = async () => {
+  const { needDebugUI } = await prompt([
+    {
+      type: "list",
+      name: "needDebugUI",
+      message: chalk.reset("是否需要 lil Debug UI ?"),
+      choices: [
+        { name: "需要", value: true },
+        { name: "不需要", value: false },
+      ],
+    },
+  ]);
+  return needDebugUI;
+};
