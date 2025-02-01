@@ -1,3 +1,10 @@
+## <small>0.1.5 (2025-02-01)</small>
+
+* feat: 新增Three是否需要lil-gui的选项 ([e81cff3](https://github.com/zhenghui-su/szh-cli/commit/e81cff3))
+* refactor: 基本模板代码重构 ([1e75acd](https://github.com/zhenghui-su/szh-cli/commit/1e75acd))
+
+
+
 ## <small>0.1.4 (2025-01-31)</small>
 
 * style: 默认样式清除 ([5c9bda7](https://github.com/zhenghui-su/szh-cli/commit/5c9bda7))
